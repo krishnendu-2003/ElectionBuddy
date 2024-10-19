@@ -84,19 +84,19 @@ function App() {
 
       <div className="candidates">
         <div className="candidate">
-          <h3>Candidate 1</h3>
+          <h3>Josh</h3>
           <p>Votes: {votes.candidate1}</p>
           <button onClick={() => handleVote('candidate1')}>Vote</button>
         </div>
 
         <div className="candidate">
-          <h3>Candidate 2</h3>
+          <h3>Mery</h3>
           <p>Votes: {votes.candidate2}</p>
           <button onClick={() => handleVote('candidate2')}>Vote</button>
         </div>
 
         <div className="candidate">
-          <h3>Candidate 3</h3>
+          <h3>Carry</h3>
           <p>Votes: {votes.candidate3}</p>
           <button onClick={() => handleVote('candidate3')}>Vote</button>
         </div>
@@ -106,10 +106,10 @@ function App() {
         <h2>Current Leader</h2>
         <p>
           {Math.max(votes.candidate1, votes.candidate2, votes.candidate3) === votes.candidate1
-            ? "Candidate 1"
+            ? "Josh"
             : Math.max(votes.candidate1, votes.candidate2, votes.candidate3) === votes.candidate2
-            ? "Candidate 2"
-            : "Candidate 3"}
+            ? "Mery"
+            : "Carry"}
         </p>
       </div>
     </div>
