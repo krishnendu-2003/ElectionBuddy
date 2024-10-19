@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import VotingABI from './abi/VotingContract.json'; // Adjust the path to the ABI file in your project
+import VotingABI from './abi/VotingContract.json';
 import './App.css';
 
-const CONTRACT_ADDRESS = '0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8'; // Replace with your deployed contract address
+const CONTRACT_ADDRESS = '0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8';
 
 function App() {
   const [votes, setVotes] = useState({
