@@ -54,7 +54,7 @@ Liner
 1. **Start the Frontend**
 
    ```bash
-   cd frontend
+   cd client
    npm start
    ```
 
