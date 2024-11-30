@@ -1,31 +1,13 @@
-require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
-
+require("dotenv").config();
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.19",
-  paths: {
-    artifacts: "./artifacts",
-  },
+  solidity: "0.8.24",
   networks: {
-    aiatestnet: {
-      url: `https://aia-dataseed1-testnet.aiachain.org/`,
-      accounts: [process.env.ACCOUNT_PRIVATE_KEY],
-      chainId: 1320,
+    linea: {
+      url: process.env.API_URL,
+      chainId: 59141,
+      accounts: [process.env.PRIVATE_KEY],
     },
-  },
-  etherscan: {
-    apiKey: {
-      aiatestnet: "your-etherscan-api-key",
-    },
-    customChains: [
-      {
-        network: "aiatestnet",
-        chainId: 1320,
-        urls: {
-          apiURL: "https://testnet.aiascan.com/api",
-          browserURL: "https://testnet.aiascan.com/tx/0x751ff77489fe107d532106c5fa37e580412efa7c512fe766e062b973ce4b1a97",
-        },
-      },
-    ],
   },
 };

@@ -6,7 +6,7 @@ Here’s a sample README for my project named as QuestLearn:
 
 # Description
 
-Election Buddy is a decentralised voting portal. With the use of the AIA chain, candidates can find it safe to vote here, because of the security that this blockchains promises to its users .
+Election Buddy is a decentralised voting portal. With the use of the Linea chain, candidates can find it safe to vote here, because of the security that this blockchains promises to its users .
 Liner
 
 ## Getting Started
